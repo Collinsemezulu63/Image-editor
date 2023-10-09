@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Collins Image Editor</title>
+</head>
+
+<body>
+    <main>
+        <header>
+            <h1>Collins Image Editor</h1>
+            <button
+                onclick="alert('Welcome to collins image editor app.Scroll down to the upload image button to upload image after editing your image click the save image button to save the image')">Instruction</button>
+        </header>
+        <article>
+            <section>
+                <div class="filter-cont">
+                    <div class="f-cont">
+                        <label for="brightness">Brightness</label>
+                        <input type="range" id="brightness" max="200">
+                        <p class="brightness-comment"></p>
+                    </div>
+                    <div class="f-cont">
+                        <label for="contrast">Contrast</label>
+                        <input type="range" id="contrast" max="200">
+                        <p class="contrast-comment"></p>
+                    </div>
+                    <div class="f-cont">
+                        <label for="grayscale">Grayscale</label>
+                        <input type="range" id="grayscale">
+                        <p class="grayscale-comment"></p>
+                    </div>
+                    <div class="f-cont">
+                        <label for="invert">Invert</label>
+                        <input type="range" id="invert">
+                        <p class="invert-comment"></p>
+                    </div>
+                </div>
+                <div class="img-cont">
+                    <img src="images/No-Image-Placeholder.svg.png" alt="img">
+                </div>
+                <div class="filter-cont">
+                    <div class="f-cont">
+                        <label for="opacity">Opacity</label>
+                        <input type="range" id="opacity">
+                        <p class="opacity-comment"></p>
+                    </div>
+                    <div class="f-cont">
+                        <label for="saturate">Saturate</label>
+                        <input type="range" id="saturate" min="1">
+                        <p class="saturate-comment"></p>
+                    </div>
+                    <div class="f-cont">
+                        <label for="sepia">Sepia</label>
+                        <input type="range" id="sepia">
+                        <p class="sepia-comment"></p>
+                    </div>
+                    <div class="buttons">
+                        <input type="file" hidden>
+                        <button class="upload-but">Upload image</button>
+                        <button class="save-but">Save image</button>
+                    </div>
+                </div>
+            </section>
+        </article>
+    </main>
+</body>
+
+</html>
